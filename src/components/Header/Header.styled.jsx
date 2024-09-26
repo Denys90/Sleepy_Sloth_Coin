@@ -1,51 +1,26 @@
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
+import theme from '../../styles/theme';
 
-export const HeaderContainer = styled.div`
-  padding: 20px;
-`;
+export const Container = styled.div`
+  height: 70px;
+  border: 1px solid #240690;
+  background: ${theme.colors.header};
 
-export const Navigation = styled.nav`
+  padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 `;
 
-export const StyledLink = styled(Link)`
-  padding: 8px 16px;
-  color: #ffffff; /* White text color */
-  text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
-  transition:
-    color 0.3s,
-    text-shadow 0.3s;
-
-  &:hover,
-  &:focus {
-    color: #00baff; /* Blue text color on hover/focus */
-    text-shadow:
-      0 0 5px #00baff,
-      0 0 10px #00baff,
-      0 0 20px #00baff,
-      0 0 40px #00baff,
-      0 0 80px #00baff;
-  }
+export const ImgSloth = styled.img`
+  width: 360px;
 `;
-
-export const IconWrapper = styled.svg`
-  width: ${(props) => props.size || '12px'};
-  height: ${(props) => props.size || '12px'};
-  fill: ${(props) => props.color || '#ffffff'};
-  display: inline-block;
-  margin-right: 5px;
-  box-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
+export const Paragraph = styled.p`
+  font-size: 32px;
+`;
+export const ParagraphOne = styled.p`
+  margin: 0;
+  margin-left: 150px;
+  font-size: 32px;
+  width: 220px;
 `;

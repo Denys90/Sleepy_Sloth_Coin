@@ -1,29 +1,13 @@
-import {
-  HeaderContainer,
-  Navigation,
-  StyledLink,
-  IconWrapper,
-} from './Header.styled';
-import sprite from 'assets/sprite.svg';
+import { Container } from './Header.styled';
+
+import { RxHamburgerMenu } from 'react-icons/rx';
+import Logo from '../../assets/Logo.svg';
 
 export const Header = () => {
-
   return (
-    <HeaderContainer>
-      <Navigation>
-        <StyledLink to="/first">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          First
-        </StyledLink>
-        <StyledLink to="/second">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          Second
-        </StyledLink>
-      </Navigation>
-    </HeaderContainer>
+    <Container>
+      <img src={Logo} alt="Logo" />
+      <RxHamburgerMenu size={50} />
+    </Container>
   );
 };
