@@ -12,5 +12,5 @@ export default defineConfig({
       assets: '/src/assets',
     },
   },
-  base: '/sleepy-sloth-coin/',
+  base: '/Sleepy_Sloth_Coin/',
 });
