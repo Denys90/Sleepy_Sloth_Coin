@@ -8,7 +8,7 @@ import theme from './styles/theme.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/react_vite">
+    <BrowserRouter basename="/Sleepy_Sloth_Coin">
       <ThemeProvider theme={theme}>
         <App />
       </ThemeProvider>
