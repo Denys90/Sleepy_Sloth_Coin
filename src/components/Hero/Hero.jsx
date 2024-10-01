@@ -1,5 +1,5 @@
 import WhyRuch from '../../assets/Picture.png';
-import { Paragraph } from '../Header/Header.styled';
+import { Paragraph } from '../Hero/Hero.styled';
 import { Container, ImgSloth, Title } from '../Hero/Hero.styled';
 
 export const Hero = () => {

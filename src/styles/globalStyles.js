@@ -4,7 +4,9 @@ import theme from './theme';
 export const globalStyles = css`
   body {
     background: ${theme.colors.bgColor};
-    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Alkatra', system-ui;
+
     font-weight: 400;
     font-style: normal;
     width: 100%;

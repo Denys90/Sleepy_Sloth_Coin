@@ -4,6 +4,7 @@ const theme = {
     shadowText: '#FABF33',
     text: '#000000',
     header: '#F9E9A1',
+    white: '#FEFEFE',
   },
   boxShadow: {
     text: '0 0 3px #FF0000',

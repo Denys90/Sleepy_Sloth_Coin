@@ -24,3 +24,16 @@ export const ParagraphOne = styled.p`
   font-size: 32px;
   width: 220px;
 `;
+
+export const BurgerBtn = styled.button`
+  border: none;
+  background: none;
+  cursor: pointer;
+`;
+
+export const LinkItem = styled.a`
+  color: ${theme.colors.text};
+  :hover {
+    color: ${theme.colors.shadowText};
+  }
+`;
