@@ -1,10 +1,23 @@
-import { BurgerBtn, Container, LinkItem } from './Header.styled';
+import {
+  BtnBuyNow,
+  BtnStyles,
+  BurgerBtn,
+  Container,
+  LinkItem,
+} from './Header.styled';
 
 import { RxHamburgerMenu } from 'react-icons/rx';
-import Logo from '../../assets/Logo.svg';
+import Logo from 'assets/Logo.svg';
 import Modal from '../Modal/Modal';
 import { useState } from 'react';
 import { BuyBtn, ModalItem, ModalList } from '../Modal/Modal.styled';
+
+const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +33,25 @@ export const Header = () => {
     <>
       <Container>
         <img src={Logo} alt="Logo" />
+        <div>
+          <BtnStyles type="button" onClick={() => scrollToSection('about')}>
+            About
+          </BtnStyles>
+          <BtnStyles
+            type="button"
+            onClick={() => scrollToSection('how-to-Buy')}
+          >
+            How to Buy
+          </BtnStyles>
+          <BtnStyles
+            type="button"
+            onClick={() => scrollToSection('tokenomics')}
+          >
+            Tokenomics
+          </BtnStyles>
+        </div>
+        <BtnBuyNow type="button">Buy now</BtnBuyNow>
+
         <BurgerBtn type="button" onClick={toggleModal}>
           <RxHamburgerMenu size={50} />
         </BurgerBtn>

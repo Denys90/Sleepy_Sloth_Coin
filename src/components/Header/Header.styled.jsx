@@ -29,11 +29,51 @@ export const BurgerBtn = styled.button`
   border: none;
   background: none;
   cursor: pointer;
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    display: none;
+  }
 `;
 
 export const LinkItem = styled.a`
   color: ${theme.colors.text};
   :hover {
     color: ${theme.colors.shadowText};
+  }
+`;
+
+export const BtnStyles = styled.button`
+  border: none;
+  background: none;
+  padding: 0;
+  padding-left: 32px;
+  font-size: 24px;
+  outline: none;
+  :hover {
+    color: ${theme.colors.shadowText};
+  }
+  :nth-of-type(1) {
+    padding-left: 0;
+  }
+  @media screen and (max-width: ${theme.breakpoint.mobile}) {
+    display: none;
+  }
+`;
+
+export const BtnBuyNow = styled.button`
+  border: none;
+  background: none;
+  outline: none;
+  border: 1px solid ${theme.colors.text};
+  border-radius: 25px;
+  padding: 10px 14px 10px 14px;
+  font-size: 24px;
+  cursor: pointer;
+  :hover {
+    background: ${theme.colors.shadowText};
+    border-color: ${theme.colors.shadowText};
+  }
+  @media screen and (max-width: ${theme.breakpoint.mobile}) {
+    display: none;
   }
 `;

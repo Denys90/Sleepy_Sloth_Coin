@@ -77,8 +77,9 @@ export const ModalList = styled.ul`
 `;
 
 export const ModalItem = styled.li`
+  cursor: pointer;
   margin-bottom: 30px;
-  :nth-child(3) {
+  :nth-of-type(3) {
     margin-bottom: 0;
   }
 `;
